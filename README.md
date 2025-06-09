@@ -38,57 +38,9 @@ This project is a **full-stack web application** built using **Angular**, **.NET
 
 ---
 
-## 📁 Project Structure
-
-### Backend (`.NET Core`)
-/Domain
-Entities
-Interfaces
-
-/Application
-DTOs
-Services
-Interfaces
-
-/Infrastructure
-Data
-EF Repositories
-Configurations
-
-/WebAPI
-Controllers
-Middleware
-DI Configuration
-
-
-### Frontend (`Angular`)
-/src
-/app
-/assessment
-- assessment-list.component.ts
-- add-assessment.component.ts
-/services
-- assessment.service.ts
-
-- 
----
-
 ## 🔄 Workflow
 
 1. The user navigates to the **Assessment List Page** to view existing assessments.
 2. Clicking on **Add Assessment** opens a dynamic form built from backend-provided metadata.
 3. The user fills out the form and submits their responses.
 4. The data is validated and saved in the database using the backend API.
-
----
-
-## 🚀 How to Run the Project
-
-### Backend
-1. Navigate to the backend project folder.
-2. Run the following commands:
-
-```bash
-dotnet restore
-dotnet ef database update
-dotnet run
